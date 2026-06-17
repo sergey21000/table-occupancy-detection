@@ -30,17 +30,20 @@
 - Итоговое видео сохраняется в разрешении 800x600 (параметры `NEW_WIDTH` и `NEW_HEIGHT`) - чтобы не занимало много места на диске
 
 
-## Установка библиотек
+## Запуск
 
-Установка библиотек
+**1) Клонирование репозитория**  
+```sh
+git clone https://github.com/sergey21000/table-occupancy-detection
+cd table-occupancy-detection
+```
+
+**2) Установка библиотек**  
 ```sh
 pip install -r requirements.txt
 ```
 
-
-## Запуск детекции
-
-**Запуск детекции**
+**3) Запуск детекции**
 ```sh
 python main.py --video "путь_к_видео.mp4"
 ```
@@ -52,8 +55,7 @@ python main.py --video "видео 1.mp4"
 При первом запуске появится окно для выбора области столика  
 Выделите зону и нажмите пробел или Enter
 
-Видео на котором производилась детекция:
-https://drive.google.com/drive/folders/12S_aIDePY_q-LW4U3hovVaoyCROe2NMg?usp=sharing
+Видео на котором производилась детекция: [видео 1.mp4](https://drive.google.com/drive/folders/12S_aIDePY_q-LW4U3hovVaoyCROe2NMg?usp=sharing) (Google Drive)
 
 
 ## Результаты
@@ -71,8 +73,7 @@ https://drive.google.com/drive/folders/12S_aIDePY_q-LW4U3hovVaoyCROe2NMg?usp=sha
 ffmpeg -i "видео 1_result.mp4" -vcodec libx264 -crf 23 -preset fast output.mp4
 ```
 
-Пример папки с результатами:
-https://drive.google.com/drive/folders/1rM64ZInW_pruIcwy-XDW55IAHG2D9QCT?usp=sharing
+Пример папки с результатами: [results](https://drive.google.com/drive/folders/1rM64ZInW_pruIcwy-XDW55IAHG2D9QCT?usp=sharing) (Google Drive)
 
 
 **Тестовое видео**
