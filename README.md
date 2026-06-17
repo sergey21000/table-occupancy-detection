@@ -2,7 +2,7 @@
 
 # Test: Table Occupancy Detection from Video
 
-Решение тестового задания по детекции занятости столиков  
+Решение тестового задания по детекции занятости столиков в заведениях общепита  
 Определяет, когда столик свободен или занят, и считает среднее время между уходом гостя и приходом следующего
 
 Задание: [**Test_Task_Table_Occupancy_2026.pdf**](https://drive.google.com/file/d/1zYHC-YDNYSBvF8pM37s36PsOPF_erYa9/view?usp=sharing) (Google Drive)
@@ -16,8 +16,9 @@
 ## Стек технологий
 
 - [python](https://www.python.org/) >= 3.10
-- [ultralytics](https://github.com/ultralytics/ultralytics) - для детекции людей в кадре
-- [pandas](https://github.com/pandas-dev/pandas) сохранения результатов детекции в датафрейм
+- [ultralytics](https://github.com/ultralytics/ultralytics) - детекция людей в кадре
+- [pandas](https://github.com/pandas-dev/pandas) - сохранение результатов детекции в датафрейм
+- [ffmpeg](https://ffmpeg.org/) - сжатие видео для экономии места на диске
 
 
 ## Логика работы скрипта
